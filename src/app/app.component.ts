@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  currentPage: string = 'recipe';
   title = 'recipes-angular';
+
+  onNavigate(feature: string) {
+    this.currentPage = feature;
+  }
 }

@@ -10,6 +10,8 @@ import {RecipeListComponent} from './recipes/recipe-list/recipe-list.component';
 import {RecipeDetailComponent} from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import {RouterModule} from '@angular/router';
+import { UnlessDirective } from './unless.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {RouterModule} from '@angular/router';
     ShoppingListComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    UnlessDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
